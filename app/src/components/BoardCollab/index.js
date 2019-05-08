@@ -2,6 +2,8 @@ import React from "react";
 
 import SquareCollab from "../SquareCollab";
 
+import "./styles.css";
+
 const squareCollabs = qtd => {
     let max = qtd;
     const squares = [];
@@ -15,7 +17,7 @@ const squareCollabs = qtd => {
 }
 
 const BoardCollab = ({qtd}) => (
-    <article>{squareCollabs(qtd)}</article>
+    <article className="board-collab">{squareCollabs(qtd)}</article>
 
 );
 
