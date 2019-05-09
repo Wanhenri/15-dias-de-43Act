@@ -12,15 +12,14 @@ class SquareCollab extends Component{
         }
 
         handleClick = () => {
-            const newState = {}
-            
-            if(this.state.content === "X") {
-                newState.content = "O";
-            } else {
-                newState.content = "X"
-            }
-
-            this.setState(newState)
+            // const newState = {content: "X"};
+            // 
+            // if(this.state.content === "X") {
+            //     newState.content = "O";
+            // } 
+            // 
+            // this.setState(newState)
+            this.setState(this.state.content === "X" ? {content: "O"} : {content: "X"});
     
         };
 
