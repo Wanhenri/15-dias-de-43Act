@@ -4,9 +4,18 @@ import SquareCollab from "../SquareCollab";
 
 import "./styles.css";
 
+const createSquares = () => {
+    const squares = Array(9).fill();
 
-const BoardCollab = ({qtd}) => (
-    <article className="board-collab"><SquareCollab/></article>
+    // console.log("valor: ", squares);
+
+    return squares.map((square, index) => <SquareCollab key={index} />)
+}
+
+const BoardCollab = () => (
+    <article className="board-collab">
+        {createSquares()}
+    </article>
 
 );
 
