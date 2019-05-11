@@ -1,6 +1,12 @@
 import React from "react";
 import "./styles.css";
 
-const NextPlayer = () => (<p className="next-player" >Próximo jogador: X</p>);
+const NextPlayer = ({player, level}) => (  
+    <> 
+        <p className="next-player" >Próximo jogador: {player}</p>
+        <p className="next-player">Nivel: {level} </p>
+    </>
+);
+
 
 export default NextPlayer;
