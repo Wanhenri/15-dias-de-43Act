@@ -1,0 +1,19 @@
+ol {
+    padding: 0;
+}
+.history-collab {
+    margin:0 auto;
+    width: 80vw;
+    font-family: 'Comfortaa', sans-serif;
+    list-style: none;
+    margin-bottom: 15px;    
+    padding: 10px 0; 
+    background-color: #fd79a8; 
+    color: #dfe6e9; 
+    box-shadow: 2px 2px 4px rgb(45, 52, 54, 0.5); 
+}
+
+.history-collab:nth-child(odd) {
+    background-color: #e84393;
+    color: #dfe6e9;
+}
