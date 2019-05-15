@@ -17,8 +17,15 @@ class GameWrapper extends Component {
         level: 10
     };
 
-    handleClick = () => {
-        this.setState({player: this.state.player === "X" ? "O" : "X"})
+    handleClick = index => {    
+        const {player, squares} = this.state;
+        
+        (!squares[index] && (squares[index] = player));
+           
+        this.setState(({player, squares}) => ({        
+            player: player === "X" ? "O" : "X",
+            squares
+        }))
 
     }
     render(){
