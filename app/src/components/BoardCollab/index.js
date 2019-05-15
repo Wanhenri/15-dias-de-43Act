@@ -11,6 +11,7 @@ class BoardCollab extends Component {
         return squares.map(
             (square, index) => (
                  <SquareCollab 
+                    player={this.props.player}
                     key={index} 
                     onClick = {this.props.onClick} 
                 />

@@ -11,7 +11,7 @@ import "./styles.css";
 
 
 class GameWrapper extends Component {
-    state = {player: "X" , level: 10};
+    state = {player: "X",  squares: Array(9).fill(""), level: 10};
 
     handleClick = () => {
         this.setState({player: this.state.player === "X" ? "O" : "X"})
@@ -23,7 +23,7 @@ class GameWrapper extends Component {
         return (
             <main className="game-wrapper">
                 <NextPlayer player={player} level={level} />
-                <BoardCollab onClick={this.handleClick} />  
+                <BoardCollab player={this.state.player === "X" ? "O" : "X"} onClick={this.handleClick} />  
                 <HistoryCollab />          
             </main>
         )
