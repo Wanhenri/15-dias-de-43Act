@@ -22,10 +22,10 @@ class GameWrapper extends Component {
         
         (!squares[index] && (squares[index] = player));
            
-        this.setState(({player, squares}) => ({        
+        this.setState({        
             player: player === "X" ? "O" : "X",
             squares
-        }))
+        })
 
     }
     render(){
