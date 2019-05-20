@@ -11,6 +11,7 @@
 
 }
 
+/* don't do it*/
 .square-collab::-moz-focus-inner {
 	border: none;
 }
